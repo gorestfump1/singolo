@@ -1,3 +1,13 @@
+@font-face {
+	font-family: Lato-Regular;
+	src: url('https://github.com/gorestfump1/singolo/blob/master/assets/Lato-Regular.ttf');
+    font-family: Lato-Light;
+    src: url('https://github.com/gorestfump1/singolo/blob/master/assets/Lato-Light.ttf');
+    font-family: Lato-Bold;
+    src: url('https://github.com/gorestfump1/singolo/blob/master/assets/Lato-Bold.ttf');
+    font-family: Lato-Black;
+    src: url('https://github.com/gorestfump1/singolo/blob/master/assets/Lato-blackt.ttf');
+}
 .wrapper {
 display: flex;
 width: 1020px;
@@ -29,8 +39,7 @@ header {
     font-size: 12px;
     line-height: 6px;
     color: #ffffff;
-    font-family: "Lato";
-    font-weight: 700;
+    font-family: "Lato-Bold";
     text-align: left;
     margin-right: 30px;
     margin-top: 30px;
@@ -101,8 +110,7 @@ h2 {
     font-size: 30px;
     line-height: 18px;
     color: #666d89;
-    font-family: "Lato";
-    font-weight: 900;
+    font-family: "Lato-Black";
     text-align: left;
 }
 .serv__wrapper {
@@ -116,8 +124,7 @@ h2 {
     font-size: 18px;
     line-height: 30px;
     color: #767e9e;
-    font-family: "Lato";
-    font-weight: 300;
+    font-family: "Lato-Light";
     text-align: left;
 }
 .column__3__layout {
@@ -136,8 +143,7 @@ h3 {
     font-size: 18px;
     line-height: 18px;
     color: #666d89;
-    font-family: "Lato";
-    font-weight: 900;
+    font-family: "Lato-Black";
     text-align: left;
     margin-bottom: 10px;
 }
@@ -155,8 +161,7 @@ h3 {
     font-size: 12px;
     line-height: 22px;
     color: #767e9e;
-    font-family: "Lato";
-    font-weight: 400;
+    font-family: "Lato-Regular";
     text-align: left;
     overflow-y: hidden;
 }

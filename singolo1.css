@@ -194,14 +194,14 @@ h3 {
     height: 595px;
     display: block;
     top: 85px;
-    right: 105px; 
+    right: 120px; 
     transform: rotate(90deg);
 }
 .shadow__hor {
     position: absolute;
     z-index: 1;
     transform: rotateY(180deg);
-    top: -30px;
+    top: -25px;
 }
 .base__hor {
     position: absolute;

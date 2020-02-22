@@ -1,0 +1,219 @@
+.wrapper {
+display: flex;
+width: 1020px;
+}
+header {
+    background-color: #2d303a;
+    width: 1020px;
+    height: 90px;
+    display:flex;
+    justify-content: space-between;
+}
+.logo {
+    font-size: 25px;
+    color: #ffffff;
+    font-family: "Lato";
+    font-weight: 700;
+    text-align: left;
+    margin-left: 40px;
+    margin-top: 30px;
+}
+.header__navigation ul{
+    display: flex;
+    justify-content: flex-end;
+}
+#navigation__ul_li_last{
+    margin-right: 40px;
+}
+.header__navigation ul li{
+    font-size: 12px;
+    line-height: 6px;
+    color: #ffffff;
+    font-family: "Lato";
+    font-weight: 700;
+    text-align: left;
+    margin-right: 30px;
+    margin-top: 30px;
+    cursor:pointer;
+}
+i {
+    font-style: normal;
+    color: #f06c64;
+    cursor: pointer;
+}
+.header__bottom{
+    width: 1020px;
+    height: 6px;
+    background-color: #323746;
+}
+.h1 {
+    font-size: 25px;
+    text-align: left;
+}
+.img__container__wrapper {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+}
+.image__container {
+    display: flex;
+    background-color: #f06c64;
+    width: 1020px;
+    height:595px;
+}
+.phone__container {
+    width: 960px;
+    height: 595px;
+}
+.image__container__button {
+    padding: 290px 30px;
+}
+.prev__button,
+ .next__button{
+    border: 0;
+    background: 0;
+    background-color: #f06c64;
+    cursor: pointer;
+}
+.image__container__bottom {
+    width: 1020px;
+    height: 5px;
+    background-color: #e76267;
+}
+.services__section {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #f2f2f2;
+    width: 1020px;
+    height: 600px;
+}
+.serv__text {
+    margin-top: 65px;
+    margin-bottom: 10px;
+    font-size: 30px;
+    line-height: 18px;
+    color: #666d89;
+    font-family: "Lato";
+    font-weight: bold;
+    text-align: left;
+}
+h2 {
+    font-size: 30px;
+    line-height: 18px;
+    color: #666d89;
+    font-family: "Lato";
+    font-weight: 900;
+    text-align: left;
+}
+.serv__wrapper {
+    display: flex;
+    flex-flow: column wrap;
+    margin-left: 40px;
+}
+.serv__text__p {
+    width: 940px;
+    height: 57px;
+    font-size: 18px;
+    line-height: 30px;
+    color: #767e9e;
+    font-family: "Lato";
+    font-weight: 300;
+    text-align: left;
+}
+.column__3__layout {
+    display: flex;
+    flex-flow: row wrap;
+    height: 300px; 
+    width: 1020px;
+} 
+.icon__container {
+    display: flex;
+    height: 100px;
+    width: 300px;
+    margin-left: 20px;
+}
+h3 {
+    font-size: 18px;
+    line-height: 18px;
+    color: #666d89;
+    font-family: "Lato";
+    font-weight: 900;
+    text-align: left;
+    margin-bottom: 10px;
+}
+.icon {
+    width: 59px;
+    height: 59px;
+    border-radius: 29px;
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+.icon__text {
+    width: 219px;
+    height: 78px;
+    font-size: 12px;
+    line-height: 22px;
+    color: #767e9e;
+    font-family: "Lato";
+    font-weight: 400;
+    text-align: left;
+    overflow-y: hidden;
+}
+.phone__container{
+    display: flex;
+}
+.vertical__phone {
+    position: relative;
+    width: 400px;
+    height: 595px;
+    display: block;
+    top: 55px;  
+}
+.shadow__vert {
+    position: absolute;
+    z-index: 1;
+}
+.base__vert {
+    position: absolute;
+    z-index: 2;
+}
+.layer__vert {
+    position: absolute;
+    z-index: 3;
+    top: 64px;
+    left: 14px;
+    width: 189px;
+    height: 334px;
+    overflow: hidden;
+    background-position: center;
+}
+.horizontal__phone {
+    position: relative;
+    width: 400px;
+    height: 595px;
+    display: block;
+    top: 85px;
+    right: 105px; 
+    transform: rotate(90deg);
+}
+.shadow__hor {
+    position: absolute;
+    z-index: 1;
+    transform: rotateY(180deg);
+    top: -30px;
+}
+.base__hor {
+    position: absolute;
+    z-index: 2;
+}
+.layer__hor {
+    position: absolute;
+    z-index: 3;
+    top: 64px;
+    left: 14px;
+    width: 189px;
+    height: 334px;
+    overflow: hidden;
+    background-position: left;
+}

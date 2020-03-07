@@ -209,3 +209,9 @@ h3 {
     height: 30px;
     margin: 0px 4px ;
 }
+
+.footer-links__icon:hover {
+    cursor: pointer;
+    height: 60px;
+    width: 60px;
+}

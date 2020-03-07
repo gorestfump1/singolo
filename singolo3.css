@@ -1,0 +1,211 @@
+@font-face {
+	font-family: Lato-Regular;
+	src: url('https://github.com/gorestfump1/singolo/blob/master/assets/Lato-Regular.ttf');
+    font-family: Lato-Light;
+    src: url('https://github.com/gorestfump1/singolo/blob/master/assets/Lato-Light.ttf');
+    font-family: Lato-Bold;
+    src: url('https://github.com/gorestfump1/singolo/blob/master/assets/Lato-Bold.ttf');
+    font-family: Lato-Black;
+    src: url('https://github.com/gorestfump1/singolo/blob/master/assets/Lato-blackt.ttf');
+}
+
+.body {
+    background-color: #f06c64;
+    color: #f0d8d9;
+    font-family: "Lato";
+}
+
+.quote-body {
+    margin: auto;
+}
+
+.get-a-quote {
+    width: 1020px;
+    height: 650px;
+    background-color: #f06c64;
+    color: #f0d8d9;
+    font-family: "Lato"; 
+}
+
+.quote-header {
+    padding: 69px 0px 0px 38px;
+    font-size: 30px;
+    line-height: 18px;
+    color: #f0d8d9;
+    font-family: "Lato";
+    font-weight: 900;
+    text-align: left;
+    letter-spacing: 0.7px;
+}
+
+.header__text {
+    margin: 27px 40px 36px 40px;
+    font-size: 18px;
+    line-height: 30px;
+    color: #f0d8d9;
+    font-family: "Lato";
+    font-weight: 300;
+    text-align: left;
+    letter-spacing: 0.2px;
+}
+
+.form-container {
+    display: flex;
+    flex-wrap: nowrap;
+    margin: 0px 30px;   
+}
+
+.form {
+    width: 620px;
+    margin: 0px 10px;
+}
+
+input {
+    padding: 8px 0px 7px 15px;
+    width: 620px;
+    margin: 8px 0px;
+    background-color: #d6564f;
+    color: #f0d8d9;
+    border: none;
+    border-radius: 5px;
+    letter-spacing: 0.5px;
+}
+
+textarea {
+    padding: 8px 0px 0px 15px;
+    margin-top: 10px;
+    height: 203px;
+    width: 620px;
+    background-color: #d6564f;
+    border: none;
+    border-radius: 5px;
+    letter-spacing: 0.4px;
+    color:#f0d8d9;
+}
+input, textarea {
+    font-size: 12px;
+    line-height: 22px;
+    font-family: "Lato";
+    font-weight: 400;
+    text-align: left;
+}
+input::placeholder {
+    color: #f48c8f;
+}
+
+textarea::placeholder {
+    color: #f48c8f;
+}
+
+#submit-button {
+    margin: 10px 40px 20px 540px;
+    padding: 10px 10px;
+    background-color: #2d303a;
+    border: solid 3px #f48c8f;
+    border-radius: 5px;
+    font-size: 18px;
+    line-height: 30px;
+    color: #f0d8d9;
+    font-family: "Lato";
+    font-weight: 300;
+    text-align: left;
+    letter-spacing: 0.5px;
+}
+
+h3 {
+    margin-top: 5px;
+    margin-bottom: -2px;
+}
+
+.contact-info {
+    width: 300px;
+    height: 175px;
+    margin: 0px 10px;
+    padding-top: 0px;
+}
+
+.contact__info__image {
+    height: 30px;
+    width: 30px;
+    margin-bottom: 5px;
+}
+
+.contact-container>a {
+    margin-left: 11px;
+}
+
+.location {
+    margin-right: 15px;
+}
+
+.contact__mail {
+    margin-left: -2px;
+}
+
+.contact__text {
+    margin-bottom: 20px;
+    font-size: 12px;
+    line-height: 22px;
+    color: #f0d8d9;
+    font-family: "Lato";
+    font-weight: 400;
+    text-align: left;
+    letter-spacing: 0.4px;
+}
+
+.contact-container>p {
+    padding: 0px;
+    margin: 0px;
+    font-size: 12px;
+    line-height: 20px;
+    color: #f0d8d9;
+    font-family: "Lato";
+    font-weight: 400;
+    text-align: left;
+    letter-spacing: 0.5px;
+}
+
+.quote-footer {
+    height: 6px;
+    width: 1020px;
+    background-color: #ea676b;
+}
+
+.singolo-footer {
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 26px;
+    height: 76px;
+    width: 1020px;
+    background-color: #2d303a;
+    font-size: 12px;
+    line-height: 22px;
+    color: #f0d8d9;
+    font-family: "Lato";
+    font-weight: 400;
+    text-align: left;
+}
+
+.copy {
+    height: 76px;
+    width: 200px;
+    margin: 0px;
+    padding-top: 0px;
+    padding-left: 43px;
+    letter-spacing: 0.4px;
+}
+
+.footer-links {
+    display:flex;
+    justify-content: flex-end;
+    height:76px;
+    width: 820px;
+    margin: 0px 40px 0px 0px;
+    margin-top: -5px;
+}
+
+.footer-links__icon {
+    width: 30px;
+    height: 30px;
+    margin: 0px 4px ;
+}

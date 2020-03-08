@@ -72,6 +72,7 @@ i {
 
 .image__container__button {
     padding: 290px 30px;
+    margin: -15px 0px 0px 5px;
 }
 
 .prev__button,
@@ -111,7 +112,8 @@ i {
 .serv__wrapper {
     display: flex;
     flex-flow: column wrap;
-    margin-left: 40px;
+    margin-left: 41px;
+    margin-top: -2px;
 }
 
 .serv__text__p {
@@ -137,9 +139,9 @@ i {
     display: flex;
     height: 100px;
     width: 300px;
-    margin-left: 20px;
-    margin-top: 26px;
-    margin-bottom: -5px;
+    margin: 6px -6px -4px -4px;
+    padding-left: 30px;
+    padding-top: 21px;
 }
 
 h3 {
@@ -181,11 +183,11 @@ h3 {
 
 .vertical__phone {
     position: relative;
-    margin-left: 12px;
+    margin-left: 19px;
     width: 400px;
     height: 595px;
     display: block;
-    top: 55px;  
+    top: 51px;  
 }
 
 .shadow__vert {
@@ -215,8 +217,8 @@ h3 {
     width: 400px;
     height: 595px;
     display: block;
-    top: 85px;
-    right: 120px; 
+    top: 75px;
+    right: 136px; 
     transform: rotate(90deg);
 }
 
@@ -336,9 +338,9 @@ h3 {
 }
 
 .portfolio-container__image {
-    padding: 10px 9px 9px 9px;
-    width: 220px;
-    height: 188px;
+    padding: 9px 9px 11px 12px;
+    width: 219px;
+    height: 187px;
 }
 
 .portfolio-footer {
@@ -366,7 +368,8 @@ h3 {
 .about-layout-human__image {
     width: 300px;
     height: 300px;
-    margin-left: -2px;
+    margin-left: -1px;
+    margin-top: -3px;
 }
 
 .about-layout-human {
@@ -405,6 +408,10 @@ h2:hover {
 
 .about-human-social {
     width: 300px;
+}
+
+.about-social__img {
+    margin-right: 5px;
 }
 
 .about-social__img:hover {
@@ -541,7 +548,7 @@ textarea::placeholder {
 }
 
 .contact-container>a {
-    margin-left: 11px;
+    margin-left: 9px;
 }
 
 .location {
@@ -610,7 +617,7 @@ textarea::placeholder {
     justify-content: flex-end;
     height:76px;
     width: 820px;
-    margin: -5px 43px 0px 0px;
+    margin: -6px 41px 0px 0px;;
     
     
 }

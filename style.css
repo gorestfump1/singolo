@@ -632,3 +632,43 @@ textarea::placeholder {
     height: 60px;
     width: 60px;
 }
+
+#message-block {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    top: 450%;
+    left: 30vw;
+    background: #2d303a;
+    opacity: 0.5;
+    border: 1px solid #f0d8d9;
+    border-radius: 5px;
+}
+
+#message-block.hidden {
+    display: none;
+}
+ #message {
+     position: sticky;
+     top: 50%;
+     left: 50%;
+     text-align: center;
+     color:#f0d8d9;
+ }
+
+ .hidden {
+     display: none;
+ }
+
+ .singolophones {
+    display: flex;
+}
+ /*Carousel*/
+.image__container.phone__container{
+    display: none;
+}
+.image__container.phone__container:first-child {
+    display: block;
+}
+
+

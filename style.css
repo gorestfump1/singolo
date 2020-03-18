@@ -46,7 +46,16 @@ header {
     list-style: none;
 }
 
-i {
+.header__navigation li>a{
+    text-decoration: none;
+    color: white;
+}
+
+.header__navigation ul li>a.active {
+    color: #f06b62;
+}
+
+span {
     font-style: normal;
     color: #f06c64;
     cursor: pointer;
@@ -282,6 +291,10 @@ h3 {
 }
 .portfolio-buttons-container>h3 {
     letter-spacing: 0.35px;
+}
+
+.portfolio__button.active {
+    border-color:  #ea676b;
 }
 
 .about-human-social>h4 {

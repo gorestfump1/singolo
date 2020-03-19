@@ -691,7 +691,6 @@ textarea::placeholder {
     width: 800px;
     height: 595px;
 }
- /*Carousel*/
 
 .portfolio__button.active {
     border-color:  #ea676b;
@@ -738,6 +737,8 @@ textarea::placeholder {
 
   .control {
     position: absolute;
+    width: 110px;
+    height: 600px;
     top: 0;
     bottom: 0;
     width: 15%;
@@ -745,8 +746,6 @@ textarea::placeholder {
     background: 0;
     background-color: none;
     cursor: pointer;
-    width: 110px;
-    height: 600px;
   }
   
   .control.left {
@@ -757,20 +756,6 @@ textarea::placeholder {
   .control.right {
     right: -55px;
     left: auto;
-  }
-  
-  .arrow {
-    display: inline-block;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 84px;
-    padding: 0px;
-    margin: 0px;
-    border: 0;
-    background: 0;
-    background-color: #f06c64;
-    cursor: pointer;
   }
   
   .arrow.right {
@@ -813,24 +798,9 @@ textarea::placeholder {
     }
   }
   
-  @media (max-width: 960px) {
-    .description {
-      flex-direction: column;
-      align-items: center;
-    }
-  }
-  
   @media (max-width: 640px) {
     .control > .arrow {
       display: none;
     }
   
-    .project-name {
-      display: none;
-    }
-  
-    .description {
-      border: 0;
-    }
-  }
   

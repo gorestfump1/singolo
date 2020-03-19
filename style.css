@@ -1,5 +1,7 @@
 body {
     margin: 0px;
+    min-width:1020px;
+    scroll-behavior: smooth;
 }
 .wrapper {
     display: flex;
@@ -12,6 +14,9 @@ header {
     height: 90px;
     display:flex;
     justify-content: space-between;
+    position: fixed;
+    z-index: 2;
+    opacity: 0.8;
 }
 
 .logo {
@@ -34,7 +39,7 @@ header {
     margin-right: 40px;
 }
 
-.header__navigation ul li{
+.header__navigation li{
     font-size: 12px;
     line-height: 6px;
     color: #ffffff;
@@ -53,6 +58,10 @@ header {
 
 .header__navigation ul li>a.active {
     color: #f06b62;
+}
+li:not(.active):hover {
+    font-size: 50px;
+    transition: 0.3s;
 }
 
 span {
@@ -76,20 +85,21 @@ span {
     display: flex;
     background-color: #f06c64;
     width: 1020px;
-    height:595px;
+    height:678px;
 }
 
-.image__container__button {
-    padding: 290px 30px;
-    margin: -15px 0px 0px 5px;
-}
-
-.prev__button,
- .next__button{
+#prev__button,
+ #next__button{
     border: 0;
     background: 0;
     background-color: #f06c64;
     cursor: pointer;
+    padding: 280px 50px;
+    
+}
+
+.control__image {
+    background: none;
 }
 
 .image__container__bottom {
@@ -149,7 +159,7 @@ span {
     height: 100px;
     width: 300px;
     margin: 6px -6px -4px -4px;
-    padding-left: 29px;
+    padding-left: 30px;
     padding-top: 21px;
 }
 
@@ -183,13 +193,7 @@ h3 {
     letter-spacing: 0.15px;
     margin-top: -10px;
 }
-
-.phone__container{
-    display: flex;
-    width: 960px;
-    height: 595px;
-}
-
+ 
 .vertical__phone {
     position: relative;
     margin-left: 19px;
@@ -293,10 +297,6 @@ h3 {
     letter-spacing: 0.35px;
 }
 
-.portfolio__button.active {
-    border-color:  #ea676b;
-}
-
 .about-human-social>h4 {
     margin-top: -9px;
     margin-left: -2px;
@@ -314,6 +314,10 @@ h3 {
     padding-left: 10px;
     margin-bottom: 10px;
     width: 940px;
+}
+
+.portfolio-buttons-wrapper {
+    display: flex;
 }
 
 .portfolio__button {
@@ -341,13 +345,22 @@ h3 {
     transition: color 0.5s;
 }
 
+.portfolio__button.active {
+    color: #F06C64;
+    border: 3px solid #c5c5c5;
+    border-radius: 3px;
+}
+
 .portfolio-images-container {
     display: flex;
     flex-flow: column wrap ;
     justify-content: flex-start;
     height: 665px;
     overflow: hidden;
-    
+}
+
+.portfolio-images-container>img.active {
+    border: 5px solid #F06C64;
 }
 
 .portfolio-container__image {
@@ -363,9 +376,10 @@ h3 {
 }
 
 .about-us {
-    padding: 47px 30px 0px 30px;
+    padding: 47px 0px 0px 30px;
     background-color: #f2f2f2;
     height: 680px;
+    width: 991px;
 }
 
 .about__head{
@@ -630,9 +644,7 @@ textarea::placeholder {
     justify-content: flex-end;
     height:76px;
     width: 820px;
-    margin: -6px 41px 0px 0px;;
-    
-    
+    margin: -6px 41px 0px 0px;
 }
 
 .footer-links__icon {
@@ -673,15 +685,152 @@ textarea::placeholder {
      display: none;
  }
 
- .singolophones {
+ .singolophone {
     display: flex;
+    margin-left: 120px;
+    width: 800px;
+    height: 595px;
 }
  /*Carousel*/
-.image__container.phone__container{
+
+.portfolio__button.active {
+    border-color:  #ea676b;
+}
+
+.small__vertical__phones {
+    margin: 7px 0px -13px 0px;
+
+}
+.carousel {
+    position: relative;
+    top: 395px;
+    left: 510px;
+    width: 1020px;
+    height: 605px;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    opacity: 0.3px;
+    z-index: 1;
+  }
+  
+  .items-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .item {
     display: none;
-}
-.image__container.phone__container:first-child {
+    position: relative;
+    animation: 0.5s ease-in-out;
+  }
+  
+  .active,
+  .next {
     display: block;
-}
+  }
+  
+  .next {
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
 
-
+  .control {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 15%;
+    border: 0;
+    background: 0;
+    background-color: none;
+    cursor: pointer;
+    width: 110px;
+    height: 600px;
+  }
+  
+  .control.left {
+    left: -55px;
+    right: auto;
+  }
+  
+  .control.right {
+    right: -55px;
+    left: auto;
+  }
+  
+  .arrow {
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 84px;
+    padding: 0px;
+    margin: 0px;
+    border: 0;
+    background: 0;
+    background-color: #f06c64;
+    cursor: pointer;
+  }
+  
+  .arrow.right {
+    right: 50%;
+  }
+  
+  .to-left {
+    animation-name: left;
+  }
+  
+  .from-right {
+    animation-name: right;
+  }
+  
+  .to-right {
+    animation-name: right;
+    animation-direction: reverse;
+  }
+  
+  .from-left {
+    animation-name: left;
+    animation-direction: reverse;
+  }
+  
+  @keyframes left {
+    from {
+      left: 0;
+    }
+    to {
+      left: -100%;
+    }
+  }
+  
+  @keyframes right {
+    from {
+      left: 100%;
+    }
+    to {
+      left: 0;
+    }
+  }
+  
+  @media (max-width: 960px) {
+    .description {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  
+  @media (max-width: 640px) {
+    .control > .arrow {
+      display: none;
+    }
+  
+    .project-name {
+      display: none;
+    }
+  
+    .description {
+      border: 0;
+    }
+  }
+  

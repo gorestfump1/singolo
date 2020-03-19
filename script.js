@@ -72,23 +72,69 @@ function formPost() {
   formPost();
 
   ///////////Slider
-  var i = 0;
+let items = document.querySelectorAll('.carousel .item');
+let currentItem = 0;
+let isEnabled = true;
 
-  BTNPREV.addEventListener('click', () => {
-  SLIDEIMG[i].style.display = 'none';
-  i--;
-  if(i < 0){
-    i = 0;
-  }
-  SLIDEIMG[i].style.display = 'block';
-    })
+function changeCurrentItem(n) {
+	currentItem = (n + items.length) % items.length;
+}
 
-    BTNNEXT.addEventListener('click', () => {
-      SLIDEIMG[i].style.display = 'none';
-      i++;
-      if (i >= SLIDEIMG.length){
-        i = 0;
-      }
-      SLIDEIMG[i].style.display = 'block';
-        })
+function hideItem(direction) {
+	isEnabled = false;
+	items[currentItem].classList.add(direction);
+	items[currentItem].addEventListener('animationend', function() {
+		this.classList.remove('active', direction);
+	});
+}
+
+function showItem(direction) {
+	items[currentItem].classList.add('next', direction);
+	items[currentItem].addEventListener('animationend', function() {
+		this.classList.remove('next', direction);
+		this.classList.add('active');
+		isEnabled = true;
+	});
+}
+
+function nextItem(n) {
+	hideItem('to-left');
+	changeCurrentItem(n + 1);
+	showItem('from-right');
+}
+
+function previousItem(n) {
+	hideItem('to-right');
+	changeCurrentItem(n - 1);
+	showItem('from-left');
+}
+
+document.querySelector('.control.left').addEventListener('click', function() {
+	if (isEnabled) {
+		previousItem(currentItem);
+	}
+});
+
+document.querySelector('.control.right').addEventListener('click', function() {
+	if (isEnabled) {
+		nextItem(currentItem);
+	}
+});
+////////////////Scroll not work why?
+document.addEventListener('scroll', onScroll);
+
+function onScroll(event) {
+    const CurPos = window.scrollY;
+    const SECTIONS = document.querySelectorAll('body>.navi-anchor');
+    const LINKS = document.querySelectorAll('#header__navigation__menu a');
     
+    SECTIONS.forEach((el) => {
+  if (el.offsetTop <= curPos && (el.offsetTop + el.offsetHeight) > CurPos) {
+    LINKS.forEach((a) => {
+      a.classList.remove('active');
+        if(el.el.getAttribute('id') === a.getAttribute('href').substring(1)) {
+          a.classList.add('active');}
+        })
+        }
+      })
+    }

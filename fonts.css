@@ -3,10 +3,10 @@
     font-style: normal;
     font-weight: 300;
     font-display: swap;
-    src: url('./assets/LatoLatin-Light.eot'); 
-    src: url('./assets/LatoLatin-Light.woff2') format('woff2'),
-         url('./assets/LatoLatin-Light.woff') format('woff'), 
-         url('./assets/LatoLatin-Light.ttf') format('truetype');
+    src: url('https://github.com/gorestfump1/singolo/blob/master/assets//LatoLatin-Light.eot'); 
+    src: url('https://github.com/gorestfump1/singolo/blob/master/assets/LatoLatin-Light.woff2') format('woff2'),
+         url('https://github.com/gorestfump1/singolo/blob/master/assets//LatoLatin-Light.woff') format('woff'), 
+         url('https://github.com/gorestfump1/singolo/blob/master/assets/LatoLatin-Light.ttf') format('truetype');
 }
 
 @font-face {
@@ -14,10 +14,10 @@
     font-style: normal;
     font-weight: 400;
     font-display: swap;
-    src: url('./assets/LatoLatin-Regular.eot'); 
-    src: url('./assets/LatoLatin-Regular.woff2') format('woff2'), 
-         url('./assets/LatoLatin-Regular.woff') format('woff'), 
-         url('./assets/LatoLatin-Regular.ttf') format('truetype');
+    src: url('https://github.com/gorestfump1/singolo/blob/master/assets/LatoLatin-Regular.eot'); 
+    src: url('https://github.com/gorestfump1/singolo/blob/master/assets/LatoLatin-Regular.woff2') format('woff2'), 
+         url('https://github.com/gorestfump1/singolo/blob/master/assets/LatoLatin-Regular.woff') format('woff'), 
+         url('https://github.com/gorestfump1/singolo/blob/master/assets/LatoLatin-Regular.ttf') format('truetype');
 }
 
 @font-face {
@@ -25,10 +25,10 @@
     font-style: normal;
     font-weight: 700;
     font-display: swap;
-    src: url('./assets/LatoLatin-Bold.eot');
-    src: url('./assets/LatoLatin-Bold.woff2') format('woff2'), 
-         url('./assets/LatoLatin-Bold.woff') format('woff'), 
-         url('./assets/LatoLatin-Bold.ttf') format('truetype');
+    src: url('https://github.com/gorestfump1/singolo/blob/master/assets/LatoLatin-Bold.eot');
+    src: url('https://github.com/gorestfump1/singolo/blob/master/assets/LatoLatin-Bold.woff2') format('woff2'), 
+         url('https://github.com/gorestfump1/singolo/blob/master/assets/LatoLatin-Bold.woff') format('woff'), 
+         url('https://github.com/gorestfump1/singolo/blob/master/assets/LatoLatin-Bold.ttf') format('truetype');
 }
 
 @font-face {
@@ -36,8 +36,8 @@
     font-style: normal;
     font-weight: 900;
     font-display: swap;
-    src: url('./assets/LatoLatin-Black.eot'); 
-    src: url('./assets/LatoLatin-Black.woff2') format('woff2'),
-         url('./assets/LatoLatin-Black.woff') format('woff'), 
-         url('./assets/LatoLatin-Black.ttf') format('truetype');
+    src: url('https://github.com/gorestfump1/singolo/blob/master/assets/Lato-Black.ttf.eot'); 
+    src: url('https://github.com/gorestfump1/singolo/blob/master/assets/LatoLatin-Black.woff2') format('woff2'),
+         url('https://github.com/gorestfump1/singolo/blob/master/assets/LatoLatin-Black.woff') format('woff'), 
+         url('https://github.com/gorestfump1/singolo/blob/master/assets/LatoLatin-Black.ttf') format('truetype');
 }

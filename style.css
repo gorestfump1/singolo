@@ -1,8 +1,12 @@
 body {
     margin: 0px;
     min-width:1020px;
-    scroll-behavior: smooth;
 }
+
+html {
+    scroll-behavior: smooth;
+  }
+
 .wrapper {
     display: flex;
     width: 1020px;
@@ -728,6 +732,10 @@ textarea::placeholder {
   .next {
     display: block;
   }
+
+.active__link {
+    color: #f06c64;
+}
   
   .next {
     position: absolute;

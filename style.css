@@ -320,7 +320,7 @@ h3 {
     width: 940px;
 }
 
-.portfolio-buttons-wrapper {
+#portfolio-buttons-container>.portfolio-buttons-wrapper {
     display: flex;
 }
 

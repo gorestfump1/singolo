@@ -120,21 +120,26 @@ document.querySelector('.control.right').addEventListener('click', function() {
 		nextItem(currentItem);
 	}
 });
-////////////////Scroll not work why?
+////////////////Scroll
 document.addEventListener('scroll', onScroll);
 
 function onScroll(event) {
-    const CurPos = window.scrollY;
-    const SECTIONS = document.querySelectorAll('body>.navi-anchor');
-    const LINKS = document.querySelectorAll('#header__navigation__menu a');
-    
-    SECTIONS.forEach((el) => {
-  if (el.offsetTop <= curPos && (el.offsetTop + el.offsetHeight) > CurPos) {
-    LINKS.forEach((a) => {
-      a.classList.remove('active');
-        if(el.el.getAttribute('id') === a.getAttribute('href').substring(1)) {
-          a.classList.add('active');}
-        })
+  const curPos = window.scrollY;
+  const DIVS = document.querySelectorAll('body > navi__anchor');
+
+  DIVS.forEach((el) => {
+
+    if (el.offsetTop <= curPos && (el.offsetTop + el.parentElement.offsetHeight) > curPos){
+      NAVI.forEach((a) => {
+        a.classList.remove('active__link');
+        if (el.getAttribute('id') === a.getAttribute('href').substring(1)){
+          a.classList.add('active__link');
         }
-      })
+        if (curPos >= document.body.scrollHeight - window.innerHeight){
+          a.classList.remove('active__link');
+          document.querySelector('.navigation__contact').classList.add('active__link');
+        }
+      });
     }
+  });
+}

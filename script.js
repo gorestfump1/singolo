@@ -11,6 +11,8 @@ const FORM = document.querySelector('.form');
 const BTNPREV = document.getElementById('prev__button');
 const BTNNEXT = document.getElementById('next__button');
 const SLIDEIMG = document.querySelectorAll('.phone__container');
+const BURGER = document.getElementById('header__burger');
+
 ////// Header
 NAVI.addEventListener('click' , function(event) {
   NAVI.querySelectorAll('a').forEach(el => el.classList.remove('active'));
@@ -25,6 +27,20 @@ BASE.addEventListener('click' , (event) => {
 BASEHOR.addEventListener('click' , (event) => {
     document.getElementById('layer__hor').classList.toggle('hidden')
 });
+
+////// Burger
+BURGER.addEventListener('click' , (event) => {
+  document.getElementById('header__navigation').classList.toggle('header__navigation__active')
+});
+
+BURGER.addEventListener('click' , (event) => {
+  document.getElementById('header__burger').classList.toggle('header__burger__active')
+});
+
+BURGER.addEventListener('click' , (event) => {
+  document.getElementById('logo').classList.toggle('logo__active')
+});
+
 
 ////// Portfolio
 TAGS_MENU.addEventListener('click', (e) => {

@@ -739,6 +739,11 @@ textarea::placeholder {
     width: 800px;
     height: 595px;
 }
+
+.about-social__image {
+height: 30px;
+}
+
  /*Carousel*/
 
 .portfolio__button.active {
@@ -746,7 +751,8 @@ textarea::placeholder {
 }
 
 .small__vertical__phones {
-    margin: 7px 0px -13px 0px;
+    margin: 12px 0px 0px 0px;
+    height: 95%;
 
 }
 .carousel {

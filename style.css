@@ -486,6 +486,7 @@ h2:hover {
 
 .about-social__img {
     margin-right: 5px;
+        height: 30px;
 }
 
 .about-social__img:hover {
@@ -1002,7 +1003,7 @@ height: 30px;
      }
      
      .about-us {
-         width: 93%;
+         width: 92%;
          margin: 0px;
          padding: 40px;
      }
@@ -1027,7 +1028,7 @@ height: 30px;
         width: 99.3%;
     }
     .header__bottom {
-        width:100%;
+        width:99.4%;
     }
 
     .common-wrapper {

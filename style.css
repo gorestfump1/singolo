@@ -251,6 +251,9 @@ h3 {
 .shadow__vert {
     position: absolute;
     z-index: 1;
+    top: 12px;
+    left: -100px;
+    width: 105%;
 }
 
 .base__vert {
@@ -283,8 +286,9 @@ h3 {
 .shadow__hor {
     position: absolute;
     z-index: 1;
+    left: 15px;
     transform: rotateY(180deg);
-    top: -25px;
+    top: -29px;
 }
 
 .base__hor {
